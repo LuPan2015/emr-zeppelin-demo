@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%sql\n-- select * from my_catalog.my_ns2.my_table1;\n\nINSERT OVERWRITE TABLE my_catalog.my_ns2.my_table1\nSELECT id, data, category\nFROM my_catalog.my_ns2.my_table1\nGROUP BY id, data, category;\n",
+      "text": "%sql\nselect * from my_catalog.my_ns2.my_table1 limit 10;",
       "user": "anonymous",
-      "dateUpdated": "2021-09-16 07:13:34.882",
+      "dateUpdated": "2021-09-16 07:26:03.272",
       "progress": 100,
       "config": {
         "editorSetting": {
@@ -14,7 +14,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 16.0,
+        "fontSize": 9.0,
         "results": {
           "0": {
             "graph": {
@@ -190,7 +190,9 @@
   "noteForms": {},
   "angularObjects": {},
   "config": {
-    "isZeppelinNotebookCronEnable": false
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
   },
   "info": {
     "isRunning": false
