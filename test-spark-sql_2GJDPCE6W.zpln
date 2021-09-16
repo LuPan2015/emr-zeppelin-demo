@@ -3,7 +3,7 @@
     {
       "text": "%sql\nselect * from my_catalog.my_ns2.my_table1;",
       "user": "anonymous",
-      "dateUpdated": "2021-09-16 07:03:24.979",
+      "dateUpdated": "2021-09-16 07:07:51.589",
       "progress": 100,
       "config": {
         "editorSetting": {
@@ -15,7 +15,37 @@
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
         "fontSize": 9.0,
-        "results": {},
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "id": "string",
+                      "data": "string",
+                      "category": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
         "enabled": true
       },
       "settings": {
@@ -66,6 +96,6 @@
     "isZeppelinNotebookCronEnable": false
   },
   "info": {
-    "isRunning": true
+    "isRunning": false
   }
 }
