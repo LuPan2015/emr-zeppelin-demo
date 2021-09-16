@@ -1,10 +1,89 @@
 {
   "paragraphs": [
     {
+      "text": "%sql\n-- select * from my_catalog.my_ns2.my_table1;\n\nINSERT OVERWRITE TABLE my_catalog.my_ns2.my_table1\nSELECT id, data, category\nFROM my_catalog.my_ns2.my_table1\nGROUP BY id, data, category;\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-09-16 07:13:34.882",
+      "progress": 100,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 16.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "id": "string",
+                      "data": "string",
+                      "category": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ip-172-31-16-49.cn-northwest-1.compute.internal:4040/jobs/job?id\u003d1"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1631775785728_1668149022",
+      "id": "paragraph_1631775785728_1668149022",
+      "dateCreated": "2021-09-16 07:03:05.728",
+      "dateStarted": "2021-09-16 07:13:34.894",
+      "dateFinished": "2021-09-16 07:13:52.364",
+      "status": "FINISHED"
+    },
+    {
       "text": "%sql\nselect * from my_catalog.my_ns2.my_table1;",
       "user": "anonymous",
-      "dateUpdated": "2021-09-16 07:07:51.589",
-      "progress": 100,
+      "dateUpdated": "2021-09-16 07:14:22.004",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -57,7 +136,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "id\tdata\tcategory\n1\tPizza\torders1\n1\tPizza\torders1\n1\tPizza\torders1\n1\tPizza\torders1\n1\tPizza\torders1\n1\tPizza\torders1\n1\tPizza\torders1\n1\tPizza\torders1\n1\tPizza\torders1\n1\tPizza\torders1\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n1\tPizza\torders\n1\tPizza\torders1\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n2\taaaa\tbbbb\n"
+            "data": "id\tdata\tcategory\n1\tPizza\torders1\n1\tPizza\torders\n0\tPizza\torders\n2\tPizza\torders\n3\tPizza\torders\n4\tPizza\torders\n2\taaaa\tbbbb\n"
           }
         ]
       },
@@ -70,19 +149,37 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://ip-172-31-16-49.cn-northwest-1.compute.internal:4040/jobs/job?id\u003d0"
+              "jobUrl": "http://ip-172-31-16-49.cn-northwest-1.compute.internal:4040/jobs/job?id\u003d2"
             }
           ],
           "interpreterSettingId": "spark"
         }
       },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1631775785728_1668149022",
-      "id": "paragraph_1631775785728_1668149022",
-      "dateCreated": "2021-09-16 07:03:05.728",
-      "dateStarted": "2021-09-16 07:03:24.995",
-      "dateFinished": "2021-09-16 07:04:43.730",
+      "jobName": "paragraph_1631776414884_562484445",
+      "id": "paragraph_1631776414884_562484445",
+      "dateCreated": "2021-09-16 07:13:34.885",
+      "dateStarted": "2021-09-16 07:14:20.453",
+      "dateFinished": "2021-09-16 07:14:21.805",
       "status": "FINISHED"
+    },
+    {
+      "text": "%sql\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-09-16 07:14:20.449",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1631776460449_501603110",
+      "id": "paragraph_1631776460449_501603110",
+      "dateCreated": "2021-09-16 07:14:20.449",
+      "status": "READY"
     }
   ],
   "name": "test-spark-sql",
